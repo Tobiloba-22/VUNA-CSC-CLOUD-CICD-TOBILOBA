@@ -8,18 +8,29 @@
 </head>
 <body>
     <div class="container">
-        <h1>Payment Gateway</h1>
+        <h2>Payment Form</h2>
         <form id="paymentForm">
-            <label for="cardNumber">Card Number:</label>
-            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
-
-            <label for="expiryDate">Expiry Date:</label>
-            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
-
-            <label for="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
-
-            <button type="submit">Pay Now</button>
+            <div class="form-group">
+                <label for="cardHolderName">Card Holder Name:</label>
+                <input type="text" id="cardHolderName" name="cardHolderName" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" name="amount" required>
+            </div>
+            <button type="submit">Submit Payment</button>
         </form>
     </div>
     <script src="pay.js"></script>
